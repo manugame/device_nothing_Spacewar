@@ -21,23 +21,12 @@ $(call inherit-product, vendor/nothing/camera/nothing-camera.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-evolution
 
-# RRO (pixys)
-PRODUCT_PACKAGES += \
-    PixysFrameworksSpacewar \
-    PixysSystemUISpacewar
-
-# RRO (Spacewar)
-PRODUCT_PACKAGES += \
-    SpacewarCarrierConfig \
-    SpacewarFrameworks \
-    SpacewarNfc \
-    SpacewarSettingsProvider \
-    SpacewarSettings \
-    SpacewarSystemUI \
-    SpacewarTelephony \
-    WifiResCommon
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
