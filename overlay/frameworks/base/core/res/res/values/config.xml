@@ -297,8 +297,8 @@
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
-         This array should be equal in size to 
-    config_screenBrightnessBacklight. --> 
+         This array should be equal in size to
+    config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>1</item>
         <item>255</item>
@@ -568,4 +568,7 @@
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">org.pixelexperience.glyph</string>
+
+	    <!-- Whether to use Richtap vibration -->
+    <bool name="config_usesRichtapVibration">true</bool>
 </resources>

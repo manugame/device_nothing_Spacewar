@@ -197,6 +197,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Camera
+TARGET_USES_NOTHING_CAMERA := true
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \

@@ -1,0 +1,3 @@
+[submodule "PixysGlyph"]
+	path = PixysGlyph
+	url = git@github.com:PixysOS-Devices/packages_apps_PixysGlyph.git
