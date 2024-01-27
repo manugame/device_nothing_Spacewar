@@ -3,3 +3,6 @@ persist.vendor.dpm.feature=11
 
 # RIL
 telephony.active_modems.max_count=2
+
+# Camera
+camera.disable_zsl_mode=true
